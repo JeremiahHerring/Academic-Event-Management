@@ -2,21 +2,28 @@
     session_start();
 ?>
 
+<style>
+<?php include 'index.css'; ?>
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
 </head>
 <body>
+  <div id="container">
+    <h1>Sign In</h1>
     <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
-        username:<br>
-        <input type="text" name="username"><br>
-        password:<br>
-        <input type="text" name="password"><br>
-        <input type="submit" name="login" value="login">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+        <div><input type="submit" name="login" value="login"></div>
     </form>
+  </div>
 </body>
 </html>
 <?php
