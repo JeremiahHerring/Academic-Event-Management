@@ -1,4 +1,8 @@
 <?php
+    include("database.php");
+?>
+
+<?php
     session_start();
 ?>
 <!DOCTYPE html>
@@ -16,11 +20,16 @@
 </body>
 </html>
 <?php
-     echo $_SESSION["username"] . "<br>";
-     echo $_SESSION["password"] . "<br>";
+    echo $_SESSION["username"] . "<br>";
+    echo $_SESSION["password"] . "<br>";
 
-     if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location: index.php");
-     }
+    $password = $_SESSION["password"];
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+
+    echo $hash . "<br>";
+
+    if(isset($_POST["logout"])){
+    session_destroy();
+    header("Location: index.php");
+    }
 ?>

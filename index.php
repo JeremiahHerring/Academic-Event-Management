@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
         username:<br>
         <input type="text" name="username"><br>
         password:<br>
@@ -22,7 +22,6 @@
 <?php
     if (isset($_POST["login"])){
      
-
     if(!empty($_POST["username"]) && !empty($_POST["password"])) {
         $_SESSION["username"] = $_POST["username"];
         $_SESSION["password"] = $_POST["password"];
