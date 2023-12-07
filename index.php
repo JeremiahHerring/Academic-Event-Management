@@ -14,12 +14,13 @@
     <title>Log In</title>
 </head>
 <body>
+  <div id="container">
+  <h1>Welcome to Our Academic Event Management System!</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <h2>Welcome to Our Academic Event Management System!</h2>
-        Email:<br>
-        <input type="text" name="email"><br>
-        Password:<br>
-        <input type="password" name="password"><br> <!-- Use type="password" for password input -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password"> <!-- Use type="password" for password input -->
         <input type="submit" name="submit" value="register">
     </form>
   </div>
