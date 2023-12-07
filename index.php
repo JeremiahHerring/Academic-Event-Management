@@ -1,12 +1,17 @@
 <?php
     include("database.php");
 ?>
+
+<style>
+<?php include 'index.css'; ?>
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
 </head>
 <body>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -17,6 +22,7 @@
         <input type="password" name="password"><br> <!-- Use type="password" for password input -->
         <input type="submit" name="submit" value="register">
     </form>
+  </div>
 </body>
 </html>
 <?php
@@ -38,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO users (Email, Pwd) VALUES ('$email', '$hash')";
 
             if (mysqli_query($conn, $sql)) {
-                echo "You are now registered!";
+                header("Location: home.php");
             } else {
                 echo "Error: " . mysqli_error($conn);
             }
