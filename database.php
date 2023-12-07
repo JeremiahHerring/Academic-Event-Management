@@ -1,15 +1,15 @@
 <?php
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "aem";
-    $conn = "";
+//configuration
+define("DB_SERVER", "localhost");
+define("DB_USER", "root");
+define("DB_PWD", "");
+define("DB_NAME", "aem");
 
-    try{
-    $conn = mysqli_connect(
-        $db_server, $db_user, $db_pass, $db_name);
-    }
-    catch(mysqli_sql_exception) {
-        echo"Could not connect! <br>";
-    }
+//database connection
+$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PWD, DB_NAME);
+
+if(!$conn) {
+    die ("Failed to connect to MySQL: " . mysqli_connect_error());
+}
 ?>
+
