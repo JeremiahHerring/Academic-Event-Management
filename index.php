@@ -28,19 +28,19 @@
                 <section>
                     <div class="container">
                         <div class="col-md-6"><!--image holder with 6 grid columns-->
-                            <img src="images/technical.jpg" class="img-responsive">
+                            <img src="images/oral.jpeg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
                         
-                            <h1 style="color:#003300 ; font-size:38px ;" ><u><strong>Technical Events</strong></u></h1><!--title-->
+                            <h1 style="color:#003300 ; font-size:38px ;" ><u><strong>Oral Presentation</strong></u></h1><!--title-->
                             <p><!--content-->
-                                EMBRACE YOUR TECHNICAL SKILLS BY PARTICIPATING IN OUR DIFFERENT TECHNICAL EVENTS!
+                                Come join us for some high quality oral presentations!
                             </p>
                             
                             <br><br>
                         <?php $id=1;
                         echo
-                             '<a class="btn btn-default"  href="viewEvent.php?id='.$id.'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Technical Events</a>'
+                             '<a class="btn btn-default"  href="viewEvent.php?id='.$id.'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Oral Presentation Events</a>'
                         ?>
                              </div><!--subcontent div-->
                     </div><!--container div-->
@@ -60,16 +60,16 @@
                             <img src="images/gaming.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
-                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Gaming Events</u></strong></h1><!--title-->
+                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Online</u></strong></h1><!--title-->
                             <p><!--content-->
-                                EMBRACE YOUR GAMING SKILLS BY PARTICIPATING IN OUR DIFFERENT GAMING EVENTS!
+                                Can't join us in person? See our online events!
                             </p>
                             
                             <br><br>
                             <?php 
                             $id=2;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Gaming Events</a>'
+                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Online Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->
@@ -89,16 +89,16 @@
                             <img src="images/onstage.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
-                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>On-Stage Events</strong></u></h1><!--title-->
+                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Poster</strong></u></h1><!--title-->
                             <p><!--content-->
-                                EMBRACE YOUR CONFIDENCE BY PARTICIPATING IN OUR DIFFERENT ON-STAGE EVENTS!
+                                Interested in showing off your creative skills! Come see our poster events!
                             </p>
                             
                             <br><br>
                             <?php 
                             $id=3;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View On-Stage Events</a>'
+                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Poster Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->

@@ -22,8 +22,8 @@
     <label>Event Name:</label><br>
     <input type="text" name="event_title" required class="form-control"><br><br>
 
-    <label>Event Price:</label><br>
-    <input type="number" name="event_price" required class="form-control"><br><br>
+    <label>Event Capacity:</label><br>
+    <input type="number" name="event_capacity" required class="form-control"><br><br>
 
     <label>Upload Path to Image:</label><br>
     <input type="text" name="img_link" required class="form-control"><br><br>
@@ -39,9 +39,9 @@
 
     <label>Event Location</label><br>
     <input type="text" name="location" required class="form-control"><br><br>
-    <label>Staff co-ordinator name</label><br>
+    <label>Keynote Speaker name</label><br>
     <input type="text" name="sname" required class="form-control"><br><br>
-    <label>Student co-ordinator name</label><br>
+    <label>Faculty Mentor name</label><br>
     <input type="text" name="st_name" required class="form-control"><br><br>
 
     <button type="submit" name="update" class = "btn btn-default pull-right">Create Event <span class="glyphicon glyphicon-send"></span></button>
@@ -65,7 +65,7 @@
   {
   $event_id=$_POST["event_id"];
     $event_title=$_POST["event_title"];
-    $event_price=$_POST["event_price"];
+    $event_capacity=$_POST["event_capacity"];
 
     $img_link=$_POST["img_link"];
     $type_id=$_POST["type_id"];
@@ -81,11 +81,11 @@
         
         
    
-        $INSERT="INSERT INTO events(event_id,event_title,event_price,img_link,type_id) VALUES($event_id,'$event_title', $event_price,'$img_link',$type_id);";
+        $INSERT="INSERT INTO events(event_id,event_title,capacity,img_link,type_id) VALUES($event_id,'$event_title', $event_capacity,'$img_link',$type_id);";
 
             $INSERT.= "INSERT INTO event_info (event_id,Date,time,location) Values ($event_id,'$Date','$time','$location');";
-            $INSERT.="INSERT into student_coordinator(sid,st_name,phone,event_id)  values($event_id,'$st_name',NULL,$event_id);";
-            $INSERT.="INSERT into staff_coordinator(stid,name,phone,event_id)  values($event_id,'$name',NULL,$event_id)";
+            $INSERT.="INSERT into keynote_speaker(kid,ks_name,phone,event_id)  values($event_id,'$st_name',NULL,$event_id);";
+            $INSERT.="INSERT into faculty_mentor(fmid,name,phone,event_id)  values($event_id,'$name',NULL,$event_id)";
 
         if($conn->multi_query($INSERT)===True){
           echo "<script>
