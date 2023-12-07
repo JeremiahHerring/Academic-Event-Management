@@ -29,6 +29,10 @@
                             
                             <br><br>
                         <?php echo
+                            '<a class="btn btn-default" href="abstract.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Abstract</a>'
+                        ?>
+                            <br><br>
+                        <?php echo
                              '<a class="btn btn-default" href="register.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Register</a>'
                             ?>
                                                         </div><!--subcontent div-->
