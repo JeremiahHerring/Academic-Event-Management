@@ -36,7 +36,7 @@ while($row = mysqli_fetch_array($result)) {
     <td><?php echo $row["name"]; ?></td>
     <td><?php echo $row["phone"]; ?></td>
     <td><?php echo $row["event_title"]; ?></td>
-    <td> <?php echo '<a  href="updateStaff.php?id='.$row['event_id'].'" class = "btn btn-default"> Update</a>'?></td>
+    <td> <?php echo '<a  href="updateFacultyMentor.php?id='.$row['event_id'].'" class = "btn btn-default"> Update</a>'?></td>
    
 </tr>
 <?php
