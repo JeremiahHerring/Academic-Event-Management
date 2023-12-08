@@ -7,7 +7,7 @@ $result = mysqli_query($conn,"SELECT * FROM faculty_mentor s ,events e where e.e
 
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>cems</title>
+        <title>Aems</title>
         <title></title>
         <?php require 'utils/styles.php'; ?><!--css links. file found in utils folder-->
         
