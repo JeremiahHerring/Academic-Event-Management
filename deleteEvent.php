@@ -3,8 +3,8 @@ $id=$_GET['id'];
 
 $sql="delete from events where event_id='$id';";
 $sql.="delete from event_info where event_id='$id';";
-$sql.="delete from staff_coordinator where event_id='$id';";
-$sql.="delete from student_coordinator where event_id='$id';";
+$sql.="delete from keynote_speaker where event_id='$id';";
+$sql.="delete from faculty_mentor where event_id='$id';";
 $sql.="delete from registered where event_id='$id'";
 if($conn->multi_query($sql) === True)
 {
