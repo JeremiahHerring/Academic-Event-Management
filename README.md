@@ -23,7 +23,7 @@ The Academic Event Management System is a web application developed in PHP and M
 1. **Clone the Repository**
 
    ```bash
-   [git clone https://github.com/JeremiahHerring/Academic-Event-Management.git]
+   git clone https://github.com/JeremiahHerring/Academic-Event-Management.git
    ```
 
 2. **Database Configuration**
