@@ -1,7 +1,5 @@
 # Academic Event Management System
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]([[https://github.com/your-username/your-repo-name/blob/main/LICENSE](https://github.com/JeremiahHerring/Academic-Event-Management.git)]
-
 ## Overview
 
 The Academic Event Management System is a web application developed in PHP and MySQL that enables efficient management of academic events. It provides a user-friendly interface for organizers, keynote speakers, and attendees to interact with event-related information.
@@ -25,7 +23,7 @@ The Academic Event Management System is a web application developed in PHP and M
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   [git clone https://github.com/your-username/your-repo-name.git](https://github.com/JeremiahHerring/Academic-Event-Management.git)
    ```
 
 2. **Database Configuration**
