@@ -1,6 +1,6 @@
 # Academic Event Management System
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]([https://github.com/your-username/your-repo-name/blob/main/LICENSE](https://github.com/JeremiahHerring/Academic-Event-Management.git))
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]([[https://github.com/your-username/your-repo-name/blob/main/LICENSE](https://github.com/JeremiahHerring/Academic-Event-Management.git)]
 
 ## Overview
 
