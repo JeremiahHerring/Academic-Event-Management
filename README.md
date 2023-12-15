@@ -1,7 +1,3 @@
-Certainly! Below is a sample template for a GitHub README for your academic event management system. Feel free to customize it according to your specific details.
-
----
-
 # Academic Event Management System
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-repo-name/blob/main/LICENSE)
